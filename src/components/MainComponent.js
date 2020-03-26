@@ -3,6 +3,8 @@ import {Navbar, NavbarBrand} from "reactstrap";
 import Menu from './MenuComponent';
 import {DISHES} from '../shared/dishes';
 import DishDetail from "./DishdetailComponent";
+import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 
 class Main extends Component {
     constructor(props) {
@@ -20,13 +22,8 @@ class Main extends Component {
     render() {
         return (
             <div className="App">
-                <Navbar dark color='primary'>
-                    <div className="container">
-                        <NavbarBrand>
-                            Ristorante Con Fusion
-                        </NavbarBrand>
-                    </div>
-                </Navbar>
+
+                <Header />
 
                 <div className="container">
 
@@ -38,6 +35,8 @@ class Main extends Component {
                     </div>
 
                 </div>
+
+                <Footer />
             </div>
         );
     }
