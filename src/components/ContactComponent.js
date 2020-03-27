@@ -20,7 +20,6 @@ class Contact extends Component {
     }
 
 
-
     render() {
 
         const required = (val) => val && val.length;
@@ -128,7 +127,10 @@ class Contact extends Component {
                                                   placeholder="Tel. Number"
                                                   className="form-control"
                                                   validators={{
-                                                      required, minLength: minLength(3), maxLength: maxLength(15), isNumber
+                                                      required,
+                                                      minLength: minLength(3),
+                                                      maxLength: maxLength(15),
+                                                      isNumber
                                                   }}
                                     />
                                     <Errors
@@ -189,11 +191,11 @@ class Contact extends Component {
                                 <Col md={10}>
                                     <Control.textarea model=".message" id="message" name="message"
                                                       rows="12"
-                                                      className="form-control" />
+                                                      className="form-control"/>
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Col md={{size:10, offset: 2}}>
+                                <Col md={{size: 10, offset: 2}}>
                                     <Button type="submit" color="primary">
                                         Send Feedback
                                     </Button>
