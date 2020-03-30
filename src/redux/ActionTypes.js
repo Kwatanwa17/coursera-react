@@ -9,7 +9,11 @@ export const PROMOS_LOADING = 'PROMOS_LOADING';
 export const ADD_PROMOS = 'ADD_PROMOS';
 export const PROMOS_FAILED = 'PROMOS_FAILED';
 
-// Assignment 4
+// Assignment 4 Task 1
 export const LEADERS_LOADING = 'LEADERS_LOADING';
 export const ADD_LEADERS = 'ADD_LEADERS';
 export const LEADERS_FAILED = 'LEADERS_FAILED';
+
+// Assignment 4 Task 2
+export const ADD_FEEDBACK = 'ADD_FEEDBACK';
+export const FEEDBACK_FAILED = 'FEEDBACK_FAILED';
